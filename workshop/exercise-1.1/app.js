@@ -32,8 +32,8 @@ const runGame = function(){
 
 const loseGame = function(){
     if(userWon === false) {
-    result.innerText = 'You Lose!';
-    document.removeEventListener('click', runGame);
+        result.innerText = 'You Lose!';
+        document.removeEventListener('click', runGame);
     }
 }
 
