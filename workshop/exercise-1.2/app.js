@@ -30,12 +30,14 @@ const runGame = function(){
 // Let's use a RANDOM time out to display You Lose this time
 
 const timer = Math.round(Math.random()*10);
+let countdowntimer = timer;
 //time.innerText = `${timer}`;
 let timerParam = timer*1000;
 
-let actualizeTimer = function(timerParam) {
-    time.innerText = timer ;
-    if(timer == 0) {
+let actualizeTimer = function() {
+    countdowntimer -= 1 ;
+    time.innerText = countdowntimer ;
+    if(countdowntimer == 0) {
         clearInterval(countdown);
     }
 }

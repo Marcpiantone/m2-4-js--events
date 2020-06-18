@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95%;
+}
+
+button {
+    color: white;
+    font-size: 32px;
+    background: #c70303;
+    border: none;
+    margin: 1px;
+    height: 100px;
+    width: 100px;
+}
