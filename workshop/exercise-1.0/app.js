@@ -9,7 +9,7 @@ const main = document.querySelector('#main');
 
 // Write some function that edits the main
 
-const addMain = function(event){
+const addMain = function(){
     main.innerText = 'You win!';
     document.removeEventListener('click', addMain);
 }
