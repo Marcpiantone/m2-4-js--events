@@ -8,7 +8,8 @@ document.head.appendChild(stylesheet);
 
 // Grab the correct(s) element(s) from index.html in consts
 
-const main = document.getElementById('main');
+//const main = document.getElementById('main');
+const main = document.querySelector('#main');
 
 
 // Let's make variables for the number of buttons
@@ -29,8 +30,8 @@ for(i=1;i<=numButtons;i++) {
 
     const makeGreen = function(event) {
         const buttonId = event.target.id; 
-    //    document.button.style.backgroundColor = "green"; //ASK TC
-        document.getElementById(buttonId).classList.add('green')
+        // button.style.backgroundColor = 'green'; //ASK TC
+        document.getElementById(buttonId).classList.add('green');
     }
 
 

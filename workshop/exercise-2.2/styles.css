@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+button {
+    color: white;
+    font-size: 2em;
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin: 1px;
+}
