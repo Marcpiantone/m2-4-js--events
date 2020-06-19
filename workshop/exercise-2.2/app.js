@@ -17,6 +17,20 @@ const main = document.getElementById('main')
 
 let numberButtons = 20;
 
+
+//Create a function that is triggered on event click
+
+let changeColor = function(event){
+    const buttonId = event.target.id;
+    console.log(event.target);
+    if(document.getElementById(buttonId).style.background == 'darkred'){
+        document.getElementById(buttonId).style.background = 'green';
+    }
+    else {
+        document.getElementById(buttonId).style.background = 'darkred';
+    }
+}
+
 //Create the elements we need (buttons)
 
 for(i=1;i<=numberButtons;i++){
@@ -27,22 +41,6 @@ for(i=1;i<=numberButtons;i++){
     button.id = `button ${i}`;
     button.style.background = 'darkred';
     main.appendChild(button);
-}
-
-
-//Create a function that is triggered on event click
-
-let changeColor = function(event){
-    const buttonId = event.target.id;
-    if(document.getElementById(buttonId).style.background == 'darkred'){
-        document.getElementById(buttonId).style.background = 'green';
-    }
-    else {
-        document.getElementById(buttonId).style.background = 'darkred';
-    }
-}
-
-
 //Create a listener for the event
-
-document.addEventListener('click',changeColor)
+    button.addEventListener('click',changeColor);
+}
