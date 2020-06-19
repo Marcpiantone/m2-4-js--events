@@ -28,8 +28,9 @@ for(i=1;i<=numButtons;i++) {
 // // Make a function to turn buttons green
 
     const makeGreen = function(event) {
-        const buttonId = envent.target.id; 
-        document.button.style.backgroundColor = "green"; //ASK TC
+        const buttonId = event.target.id; 
+    //    document.button.style.backgroundColor = "green"; //ASK TC
+        document.getElementById(buttonId).classList.add('green')
     }
 
 
