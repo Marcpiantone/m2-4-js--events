@@ -40,8 +40,6 @@ let changeColor = function(event){
     else {
         document.getElementById(buttonId).style.background = 'darkred';
     }
-
-
 }
 
 
