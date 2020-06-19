@@ -10,7 +10,6 @@ for (let i = 1; i <= 20; i++) {
   button.innerText = i;
   button.id = `btn-${i}`;
   mainDiv.appendChild(button);
-
   button.addEventListener('click', turnGreen);
 }
 
